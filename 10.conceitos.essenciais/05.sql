@@ -1,0 +1,16 @@
+-- INSERT COM SELECT
+
+CREATE TABLE ultimas_SERIES (nome varchar2(100));
+
+SELECT * FROM ultimas_SERIES 
+
+SELECT nm_serie,ano
+FROM serie
+ORDER BY ano DESC
+
+INSERT INTO ULTIMAS_SERIES 
+SELECT nm_serie
+FROM serie
+ORDER BY ano DESC
+
+SELECT * FROM ultimas_SERIES 
